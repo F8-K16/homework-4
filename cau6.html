@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Câu 6</title>
+        <style>
+            form div {
+                margin-bottom: 8px;
+            }
+
+            form div label:first-child {
+                display: inline-block;
+                width: 180px;
+                font-weight: bold;
+            }
+            
+            form div input[type="radio"],
+            form div input[type="checkbox"] {
+                margin-right: 6px;
+            }
+
+            form div label:not(:first-child) {
+                display: block;
+                margin-left: 180px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Novell Services Login</h1>
+        <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+            <div>
+                <label for="lbl-username">Username:</label>
+                <input type="text" id="lbl-username" name="username" />
+            </div>
+            <div>
+                <label for="lbl-password">Password:</label>
+                <input type="password" id="lbl-password" name="password" />
+            </div>
+            <div>
+                <label for="lbl-city">City of Employment:</label>
+                <input type="text" id="lbl-city" name="city" />
+            </div>
+            <div>
+                <label for="lbl-server">Web server:</label>
+                <select name="server" id="lbl-server">
+                    <option value="0">-- Choose a server --</option>
+                    <option value="1">Server X</option>
+                </select>
+            </div>
+            <div>
+                <label>Please specify your role:</label>
+                <label> <input type="radio" name="role" value="admin" /> Admin </label>
+                <label> <input type="radio" name="role" value="engineer" /> Engineer </label>
+                <label> <input type="radio" name="role" value="manager" /> Manager </label>
+                <label> <input type="radio" name="role" value="guest" /> Guest </label>
+            </div>
+            <div>
+                <label>Single Sign-on to the following:</label>
+                <label> <input type="checkbox" name="method-sign" value="mail" /> Mail </label>
+                <label><input type="checkbox" name="method-sign" value="payroll" /> Payroll </label>
+                <label> <input type="checkbox" name="method-sign" value="self-service" /> Self-service </label>
+            </div>
+            <button>Login</button>
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>

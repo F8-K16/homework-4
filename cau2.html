@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Câu 2</title>
+    </head>
+    <body>
+        <h1>Form đặt hàng sản phẩm</h1>
+        <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+            <fieldset>
+                <legend>Thông tin đơn hàng</legend>
+                <div>
+                    <label for="lbl-prod-name">Tên sản phẩm:</label>
+                    <select name="prod-name" id="lbl-prod-name">
+                        <option value="ip-15">Iphone 15</option>
+                        <option value="ip-x">Iphone X</option>
+                        <option value="ip-11">Iphone 11</option>
+                        <option value="ip-12">Iphone 12</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="lbl-prod-qty">Số lượng:</label>
+                    <input type="number" name="prod-qty" id="lbl-prod-qty" />
+                </div>
+                <div>
+                    <label for="lbl-bill">Upload ảnh thanh toán:</label>
+                    <input type="file" id="lbl-bill" name="bill" />
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

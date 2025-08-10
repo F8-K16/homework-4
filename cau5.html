@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Câu 5</title>
+    </head>
+    <body>
+        <h1>Form liên hệ nhiều bước</h1>
+        <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+            <table border="1">
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Thông tin cá nhân</legend>
+                            <div>
+                                <label for="lbl-fullname">Họ tên:</label>
+                                <input type="text" id="lbl-fullname" name="fullname" />
+                            </div>
+                            <div>
+                                <label for="lbl-email">Email:</label>
+                                <input type="email" id="lbl-email" name="email" />
+                            </div>
+                            <div>
+                                <label for="lbl-tel">Số điện thoại:</label>
+                                <input type="text" id="lbl-tel" name="tel" />
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Thông tin yêu cầu</legend>
+                            <div>
+                                <label for="lbl-request">Loại yêu cầu:</label>
+                                <select name="request" id="lbl-request">
+                                    <option value="0">Hỗ trợ kỹ thuật</option>
+                                    <option value="1">Hỗ trợ tài chính</option>
+                                    <option value="2">Giải đáp thắc mắc</option>
+                                </select>
+                            </div>
+                            <div>
+                                <div><label for="lbl-desc">Mô tả:</label></div>
+                                <textarea name="desc" id="lbl-desc"></textarea>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Thông tin bổ sung</legend>
+                            <div>
+                                <label for="lbl-discount">
+                                    <input type="checkbox" name="discount" value="1" id="lbl-discount" /> Nhận email
+                                    khuyến mãi
+                                </label>
+                            </div>
+                            <div>
+                                <label>Cách liên hệ:</label>
+                                <label> <input type="radio" name="contact" value="email" /> Email </label>
+                                <label> <input type="radio" name="contact" value="tel" /> Điện thoại </label>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+            <button>Gửi thông tin</button>
+        </form>
+    </body>
+</html>

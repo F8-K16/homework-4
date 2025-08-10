@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Câu 1</title>
+    </head>
+    <body>
+        <h1>Form đăng ký tài khoản</h1>
+        <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+            <div>
+                <label for="lbl-fullname">Họ tên:</label>
+                <input type="text" id="lbl-fullname" name="fullname" />
+            </div>
+            <div>
+                <label for="lbl-email">Email:</label>
+                <input type="email" id="lbl-email" name="email" />
+            </div>
+            <div>
+                <label for="lbl-password">Mật khẩu:</label>
+                <input type="password" id="lbl-password" name="password" />
+            </div>
+            <div>
+                <label for="lbl-birthday">Ngày sinh:</label>
+                <input type="date" id="lbl-birthday" name="birthday" />
+            </div>
+            <div>
+                <label>Giới tính:</label>
+                <label> <input type="radio" name="sex" value="male" /> Nam </label>
+                <label> <input type="radio" name="sex" value="female" /> Nữ </label>
+                <label> <input type="radio" name="sex" value="unknown" /> Không biết </label>
+            </div>
+            <div>
+                <label>Sở thích:</label>
+                <label> <input type="checkbox" name="hobbies" value="reading" /> Đọc sách </label>
+                <label><input type="checkbox" name="hobbies" value="traveling" /> Du lịch </label>
+                <label> <input type="checkbox" name="hobbies" value="sport" /> Thể thao </label>
+            </div>
+            <div>
+                <div><label for="lbl-desc">Mô tả bản thân:</label></div>
+                <textarea name="desc" id="lbl-desc"></textarea>
+            </div>
+
+            <button>Đăng ký</button>
+            <button type="button">Xóa</button>
+        </form>
+    </body>
+</html>
